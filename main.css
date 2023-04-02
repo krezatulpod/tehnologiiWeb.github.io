@@ -1,0 +1,89 @@
+.empty {
+    height: 1rem;
+}
+
+.fs-6{
+    font-size: 0.8rem !important;
+}
+
+.marquee {
+    margin: auto auto;
+    white-space: nowrap;
+    min-width: 100%;
+    overflow: hidden; /* pentru a nu creea un slide-bar pe OX*/
+    height: 100%;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+#hero_section{
+  background-image: url('utile/hero_section.png');
+  background-repeat: no-repeat;
+  position:relative;
+  width: 100%;
+  height: 55vh;
+  overflow: hidden ;
+}
+
+
+#hero_section img {
+  position: absolute;
+  object-fit: contain;
+  height: 45vh;
+  bottom: 0;
+}
+
+#g1{
+   left: 0;
+   height: 55vh !important;
+}
+#g2{
+   left: 0;
+}
+
+#g3{
+   left:81%;
+   z-index: 50;
+}
+
+#g4{
+   left:71%;
+   z-index: 49;
+}
+#g5{
+    position: absolute;
+   left: 21vw;
+   z-index: 49;
+   bottom: 5vh !important;
+}
+
+#g7{
+    position: absolute;
+   left: 15vw;
+   bottom: 10vh !important;
+   z-index: 50;
+   height: 40vh !important;
+}
+
+#g8{
+    position: absolute;
+    left:0;
+    z-index: 50;
+    height: 35vh !important;
+}
