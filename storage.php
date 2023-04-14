@@ -13,7 +13,7 @@ $connection = new mysqli('localhost','root','','learncubedb');
 if($connection->connect_error ){
     die('Connection Failed : '.$connection->connect_error);
 }else{
-    $statement = $connection->prepare("insert in contactForm(firstName,lastName,phoneNumber,userMail,userMessage)
+    $statement = $connection->prepare("insert in contact_form(firstName,lastName,phoneNumber,userMail,userMessage)
     values(?,?,?,?,?)");
     $statement->bind_param("ssiss",$firstName,$lastName,$phoneNumber,$userMail,$userMessage);
     $statement->execute();
