@@ -1,3 +1,23 @@
+body {
+    font-size: 14px;
+}
+
+input {
+    border-radius: 0 !important;
+}
+
+textarea {
+    border-radius: 0 !important;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration-line: underline;
+}
+
+
 .empty {
     height: 1rem;
 }
@@ -10,7 +30,7 @@
     margin: auto auto;
     white-space: nowrap;
     min-width: 100%;
-    overflow: hidden; /* pentru a nu creea un slide-bar pe OX*/
+    overflow: hidden; /* pentru a nu creea un slide-bar pe axa OX*/
     height: 100%;
 }
 .marquee span {
@@ -86,4 +106,8 @@
     left:0;
     z-index: 50;
     height: 35vh !important;
+}
+
+#footer {
+    background-color: black;
 }
